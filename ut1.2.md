@@ -158,6 +158,8 @@ Un caso concreto de **WIMP**: Un menú se puede plantear como un grupo de altern
 
 Las pantallas de alta resolución, las pantallas táctiles y los dispositivos apuntadores, como el ratón, han permitido la creación de los entornos de manipulación directa, estas interfaces suponen un cambio de una sintaxis de comandos compleja a una manipulación de objetos y acciones con gran facilidad, siendo el entorno más común de manipulación directa la interfaz **WIMP** (*Windows, Icons, Menús, Pointers*) y **post-WIMP** (*tap, swipe, pinch, gestos*)
 
+![](media/wimp_interface.png)
+
 #### Ventajas
 
 -   Sintaxis más sencilla, reduce los errores.
@@ -186,6 +188,8 @@ El usuario expresa una necesidad utilizando lenguaje natural, escrito o hablado:
 - Respuestas imprecisas
 
 ![](media/ff9b6e5d7febfa6348ee8e2fabe3dda0.jpeg)
+
+![](media/conversational_agents.png)
 
 
 ### Interacción natural y multimodal
