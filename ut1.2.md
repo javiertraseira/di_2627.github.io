@@ -36,7 +36,7 @@ Hansen en su libro *User Engineering Principles for Interactive Systems* hace la
 3. Optimizar las operaciones mediante la rápida ejecución de operaciones comunes, la consistencia de la interfaz y organizando y reorganizando la estructura de la información basándose en la observación del uso del sistema.
 4. Facilitar buenos mensajes de error, crear diseños que eviten los errores más comunes, haciendo posible deshacer acciones realizadas y garantizar la integridad del sistema en caso de un fallo de software o hardware.
 
-### Código interfaz
+### Código de una interfaz
 
 Los estudios realizados por Myers y Rosson en una encuesta hecha a diferentes desarrolladores, demuestran que alrededor del **52%** del código de una aplicación está dedicado a la interfaz de usuario.
 
@@ -49,15 +49,15 @@ A pesar de su importancia la interacción persona-ordenador es una disciplina a 
 
 Algunas referencias aproximadas que se suelen observar:
 
-- Aplicaciones web con backend y frontend diferenciados
+- **Aplicaciones web con backend y frontend diferenciados***:
     - Frontend (HTML, CSS, JS/React/Angular/Vue): 40–50% del código.
     - Backend (API REST, lógica, DB): 50–60%.
-- Aplicaciones móviles (Android/iOS, Flutter, etc.):
+- **Aplicaciones móviles (Android/iOS, Flutter, etc.)**:
     - Interfaz + lógica de interacción: 40–60%.
     - Backend (si lo hay embebido o conectado a la nube): 40–60%.
-- Aplicaciones empresariales (ERP, CRM, gestión interna)
+- **Aplicaciones empresariales (ERP, CRM, gestión interna)**:
     - Backend suele ser mucho mayor porque hay mucha lógica de negocio y reglas: 70–80% backend, 20–30% interfaz.
-- Apps visuales o videojuegos
+- **Apps visuales o videojuegos**:
     - Gran parte del código se dedica a gráficos, UI y experiencia: puede ser 60–70% interfaz.
 
 ![](media/interface_coding.png)
@@ -72,10 +72,6 @@ La **cognición** es el proceso por el que los humanos adquirimos conocimientos 
 Sobre los usuarios es importante entender cuáles son sus capacidades y los procesos de **cognición** involucrados durante el desempeño de tareas a través del computador: la memoria, la visión, el oído o el tacto, son factores que determinan cómo manipulan y hace uso efectivo de la tecnología computacional, radicando allí la importancia del factor humano para optimizar su interacción.
 
 ![](media/3cefa3d11175e57c461566615b99a6d5.png)
-
-La **cognición** debe tomar en cuenta como el ser humano recibe y procesa la información y la transforma en conocimiento, interactuando en ese instante con las herramientas tecnológicas; todo esto utilizando sus sentidos.
-
-![](media/e754680f2071ffa3396cd62a643ce341.jpeg)
 
 
 ### Canales de Entrada y Salida
@@ -93,7 +89,7 @@ En una interacción con el ordenador el usuario recibe información que es gener
 
 - La **salida** se producirá mediante movimiento de los dedos, ojos, extremidades o cabeza, así como mediante el habla.
 
-Los canales de entrada humanos tienen restricciones como es por todos conocidos. Por ejemplo para el sistema visual:
+Los canales de entrada humanos tienen **restricciones** como es por todos conocidos. Por ejemplo para el sistema visual:
 
 ![](media/16b8fe8f8a5eeadef7bd099e570efe55.png)
 
