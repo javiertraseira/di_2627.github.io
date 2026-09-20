@@ -347,9 +347,7 @@ El texto del botón describe la acción. Las operaciones destructivas tendrán u
 
 ### Información y feedback
 
-
 Los elementos de **información y feedback** comunican qué está ocurriendo, si la operación terminó y qué debe corregirse. Puede aparecer junto al control afectado o como mensaje global de la interfaz.
-
 
 - **Estado**
     - Badges · etiquetas
@@ -404,7 +402,6 @@ Los diálogos modales interrumpen el flujo y conviene reservarlos para situacion
 ![](media/e_comunication.png)
 
 Un icono generalmente se apoya en texto de apoyo. La jerarquía visual debe hacer evidente qué contenido es principal y conservar legibilidad al ampliar texto o cambiar de pantalla.
-
 
 
 ## Interfaces naturales de usuario (NUI)
