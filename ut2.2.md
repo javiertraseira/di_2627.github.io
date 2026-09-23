@@ -368,4 +368,38 @@ La sintaxis de markdown es muy sencilla:
 
 ## Github pages
 
-Se puede hacer fácilmente desde https://pages.github.com/ siguiendo los pasos:
+GitHub Pages es un servicio ofrecido por GitHub que permite a los usuarios alojar sitios web estáticos, tales como un sistema de documentación, directamente desde sus repositorios online de GitHub.
+
+GitHub Pages es ideal para proyectos de código abierto que desean tener una página web para documentación, demos, o cualquier otro propósito. Muchos proyectos de software libre utilizan GitHub Pages para alojar su documentación y páginas de inicio.
+
+GitHub Pages también es compatible con **Jekyll**, un generador de sitios estáticos que permite construir sitios web utilizando plantillas predefinidas y archivos de formato Markdown.
+
+![Logotipo de GitHub Pages](media/github-pages.jpg)
+
+### Creación de un sitio
+
+Se puede hacer fácilmente desde [https://pages.github.com/](https://pages.github.com/) siguiendo los pasos:
+
+![Instrucciones para crear un sitio en GitHub Pages](media/crear-sitio-github-pages.png)
+
+### Activación desde un repositorio
+
+Otra forma de activar tu proyecto en **Github pages** es siguiendo los pasos indicados [aquí](https://www.aluracursos.com/blog/github-pages) o en las siguientes capturas:
+
+- No te olvides dejar la visibilidad de tu repositorio en *público* (*nombre.gitpages.io*).
+- Entra en la pestaña *Settings* y en el apartado *pages* de tu proyecto seleccionando un *Branch* y haz clic en el botón *save* para que genere la URL de tu página. Asegúrate de que hay un fichero *README.md*.
+
+![Configuración de GitHub Pages desde Settings](media/configuracion-github-pages.png)
+
+![Confirmación de publicación del sitio](media/sitio-publicado.png)
+
+### Tema basado en Jekyll
+
+A continuación, para agregar un **tema** basado en **Jekyll** a tu página de Github, sigue los pasos indicados en [su documentación](https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) o los pasos aquí indicados:
+
+- Ve al repositorio de tu sitio y crea o edita un fichero llamado **_config.yml**.
+- En dicho fichero pueden aparecer el nombre de la página, el idioma u otras propiedades, por ejemplo, `title: name` o `description: descripción`.
+- En dicho fichero deberás añadir una línea indicando el nombre del tema directamente desde [https://pages.github.com/themes/](https://pages.github.com/themes/) mediante la línea `theme: nombretema`, o usar otros **temas remotos** mediante `remote_theme: nombretema`.
+
+![Ejemplo de configuración de un tema remoto en config.yml](media/configuracion-tema-jekyll.png)
+
