@@ -223,6 +223,8 @@ Las labels permiten clasificar rápidamente el tipo de trabajo. GitHub incluye e
 - **enhancement** → mejora o nueva funcionalidad.
 
 
+![](media/issues.png)
+
 
 ### Github desktop
 
