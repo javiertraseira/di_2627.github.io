@@ -365,3 +365,7 @@ La sintaxis de markdown es muy sencilla:
 | Imagen            | ![alt text](imagen.png)                                                                            |                                                  |
 |  Tabla            | \| Sintaxis \| Descripción \| \| ----------- \| \| \| Cabecera \| Titulo \| \| Párrafo \| Texto \| | ![](media/e6f91595e7b8531494a880d94e999b1d.png)  |
 |  Lista de tareas  | [x] Realizar commit [ ] Actualizar website [ ] Cargar medios                                       |  ![](media/322936d8666ac830a995cc875c43dc26.png) |
+
+## Github pages
+
+Se puede hacer fácilmente desde https://pages.github.com/ siguiendo los pasos:
