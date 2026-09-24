@@ -368,7 +368,26 @@ La sintaxis de markdown es muy sencilla:
 |  Tabla            | \| Sintaxis \| Descripción \| \| ----------- \| \| \| Cabecera \| Titulo \| \| Párrafo \| Texto \| | ![](media/e6f91595e7b8531494a880d94e999b1d.png)  |
 |  Lista de tareas  | [x] Realizar commit [ ] Actualizar website [ ] Cargar medios                                       |  ![](media/322936d8666ac830a995cc875c43dc26.png) |
 
-## Github pages
+## Generación de documentación
+
+### Javadoc
+
+Javadoc permite escribir documentación dentro del código Java y generar a partir de ella páginas HTML. Sirve para explicar qué hace una clase o un método y cómo se utiliza. El comentario se coloca justo antes del elemento documentado y comienza por /**.
+
+| Etiqueta  | Qué explica                                 |
+| --------- | ------------------------------------------- |
+| `@param`  | Para qué sirve cada parámetro.              |
+| `@return` | Qué valor devuelve el método.               |
+| `@throws` | En qué caso puede producirse una excepción. |
+
+**Generar la documentación en NetBeans:**
+
+- Añade comentarios Javadoc a una clase y a uno de sus métodos.
+- Selecciona el proyecto.
+- Usa Run → Generate Javadoc o haz clic derecho sobre el proyecto y elige Generate Javadoc.
+- Abre el HTML generado y comprueba cómo aparecen la descripción y las etiquetas. La ubicación exacta de la opción puede variar según el tipo de proyecto.
+
+### Github pages
 
 GitHub Pages es un servicio ofrecido por GitHub que permite a los usuarios alojar sitios web estáticos, tales como un sistema de documentación, directamente desde sus repositorios online de GitHub.
 
@@ -378,13 +397,13 @@ GitHub Pages también es compatible con **Jekyll**, un generador de sitios está
 
 ![Logotipo de GitHub Pages](media/github-pages.jpg)
 
-### Creación de un sitio
+**Creación de un sitio:**
 
 Se puede hacer fácilmente desde [https://pages.github.com/](https://pages.github.com/) siguiendo los pasos:
 
 ![Instrucciones para crear un sitio en GitHub Pages](media/crear-sitio-github-pages.png)
 
-### Activación desde un repositorio
+**Activación desde un repositorio**
 
 Otra forma de activar tu proyecto en **Github pages** es siguiendo los pasos indicados [aquí](https://www.aluracursos.com/blog/github-pages) o en las siguientes capturas:
 
@@ -395,7 +414,7 @@ Otra forma de activar tu proyecto en **Github pages** es siguiendo los pasos ind
 
 ![Confirmación de publicación del sitio](media/sitio-publicado.png)
 
-### Tema basado en Jekyll
+**Tema basado en Jekyll**
 
 A continuación, para agregar un **tema** basado en **Jekyll** a tu página de Github, sigue los pasos indicados en [su documentación](https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) o los pasos aquí indicados:
 
