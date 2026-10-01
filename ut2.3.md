@@ -590,6 +590,33 @@ Es lo que se llama un **modelo delegado**: el componente Swing actúa tanto de v
 
 ### Creación proyectos GUI
 
+Crearemos un proyecto lo más sencillo posible, de tipo Maven.
+
+
+![](media/creation1.png)
+
+A continuación, agregaremos una ventana de tipo **Jframe Form**
+
+Abre la clase principal que NetBeans creó al generar el proyecto. Su nombre puede ser *Practica2_2.java* o similar.
+
+![](media/creation2.png)
+
+Conserva su nombre y sustituye el contenido del método main por este:
+
+```java
+import javax.swing.SwingUtilities;
+
+public class Practica2_2 {
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            VentanaPrincipal ventana = new VentanaPrincipal();
+            ventana.setVisible(true);
+        });
+    }
+}
+```
+
 El diseñador de GUI Swing de Netbeans llamado **Matise** es bastante potente y ofrece muchas herramientas que veremos en las siguientes partes y prácticas de la unidad.
 
 ![](media/gui_designer_swing.png)
