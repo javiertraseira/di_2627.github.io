@@ -495,6 +495,8 @@ Todo **evento** requiere de un **listener** que controle su activación.
 
 A continuación, se verán todos los tipos de *listeners* asociados al tipo de evento al que corresponden. Como se puede ver, un mismo tipo de escuchador puede estar presente en varios eventos y componentes diferentes, aunque normalmente presentan un comportamiento muy similar.
 
+¿Por qué existen diferentes listeners? Porque no queremos detectar siempre lo mismo. Cada listener está especializado en escuchar determinado tipo de interacción.
+
 ![](media/79886352c280faa7852767d4735b0228.png)
 
 ![](media/d02b9db27cca781d3f946dbbe16f0dfa.png)
@@ -653,20 +655,44 @@ El código generado en el editor tiene 4 partes diferenciadas:
 
 En NetBeans, al arrastrar un componente al formulario:
 
-- ⚠️Deberemos siempre de nombrar adecuadamente el componente arrastrado para identificar posteriormente  sus eventos. Por ejemplo *boton_aceptar* o *campo_nombre*.
+- ⚠️ Debemos siempre de nombrar adecuadamente el componente arrastrado para identificar posteriormente  sus eventos. Por ejemplo *boton_aceptar* o *campo_nombre*.
 
-- Un doble clic sobre el componente **genera automáticamente** el método del evento.
+- Un doble clic sobre el componente creará **automáticamente** un método manejador del evento.
+
+Por ejemplo, al hacer doble clic sobre un *JButton* llamado *btnSaludar*:
 
 ```java
 private void btnSaludarActionPerformed(java.awt.event.ActionEvent evt) {
-    JOptionPane.showMessageDialog(this, "¡Hola desde NetBeans!");
+
+    JOptionPane.showMessageDialog( this, "¡Hola desde NetBeans!" );
 }
 ```
 
-> NetBeans añade automáticamente el ActionListener y organiza los manejadores de eventos.
+Cuando usamos el GUI Builder Matisse, gran parte del código necesario para gestionar eventos se genera automáticamente.
 
-### Manejo de eventos en NetBeans
+NetBeans crea internamente algo equivalente a:
 
+```java
+btnSaludar.addActionListener(
+    new java.awt.event.ActionListener() {
+
+        public void actionPerformed(
+                java.awt.event.ActionEvent evt) {
+
+            btnSaludarActionPerformed(evt);
+        }
+    }
+);
+```
+El desarrollador trabaja dentro de ese método:
+
+```java
+private void btnSaludarActionPerformed(
+        java.awt.event.ActionEvent evt) {
+
+    // Código escrito por nosotros
+}
+```
 Cuando se usa el GUI Builder Matisse de NetBeans:
 
 - NetBeans generará automáticamente el código de la vista (el JFrame o JPanel con sus botones, etiquetas, etc.).
