@@ -511,8 +511,6 @@ campo.addKeyListener(new java.awt.event.KeyAdapter() {
 });
 ```
 
-
-
 ### Listeners: ActionListener
 
 Este evento detecta la pulsación sobre un componente, está presente en varios tipos de elementos siendo uno de los escuchadores más comunes.
@@ -590,18 +588,16 @@ Es lo que se llama un **modelo delegado**: el componente Swing actúa tanto de v
 
 ### Creación proyectos GUI
 
-Crearemos un proyecto lo más sencillo posible, de tipo Maven.
-
+Crearemos un proyecto de tipo *Maven>Java Application*:
 
 ![](media/creation1.png)
 
-A continuación, agregaremos una ventana de tipo **Jframe Form**
-
-Abre la clase principal que NetBeans creó al generar el proyecto. Su nombre puede ser *Practica2_2.java* o similar.
+A continuación, podemos borrar su *clase principal* generada y agregar una ventana de tipo **JFrame Form**
 
 ![](media/creation2.png)
 
-Conserva su nombre y sustituye el contenido del método main por este:
+Si hemos mantenemos la clase principal deberemos sustituir el contenido del método main por este:
+
 
 ```java
 import javax.swing.SwingUtilities;
@@ -617,7 +613,11 @@ public class Practica2_2 {
 }
 ```
 
-El diseñador de GUI Swing de Netbeans llamado **Matise** es bastante potente y ofrece muchas herramientas que veremos en las siguientes partes y prácticas de la unidad.
+Si la hemos borrado, hemos de indicar que la clase principal será la ventana Jframe, que tiene método main, en las propiedades del proyecto, dentro de *Run>Main Class*.
+
+![](media/creation3.png)
+
+El diseñador de GUI Swing de Netbeans llamado **Matise** es bastante potente y ofrece herramientas que iremos viendo progresivamente.
 
 ![](media/gui_designer_swing.png)
 
@@ -634,16 +634,19 @@ El código generado en el editor tiene 4 partes diferenciadas:
 2. **Constructor** del formulario, que llama a *initComponents()*.
 
 3. Método *initComponents()* (zona marcada como “Generated Code”).
+    - ⚠️ parte protegida y generada automáticamente. Para modificar un componente habrá que hacerlo desde el diseñador o inspector de propiedades
 
 4. Manejadores de **eventos**:
     - Cuando se hace doble clic sobre un componente en el editor visual se genera un método manejador fuera de InitComponents
 
 
-
 ### Manejo de eventos en NetBeans
 
 En NetBeans, al arrastrar un componente al formulario:
-Un doble clic sobre el componente **genera automáticamente** el método del evento.
+
+- ⚠️Deberemos siempre de nombrar adecuadamente el componente arrastrado para identificar posteriormente  sus eventos. Por ejemplo *boton_aceptar* o *campo_nombre*.
+
+- Un doble clic sobre el componente **genera automáticamente** el método del evento.
 
 ```java
 private void btnSaludarActionPerformed(java.awt.event.ActionEvent evt) {
