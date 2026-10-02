@@ -434,16 +434,25 @@ Un evento es por tanto un suceso que ocurre como consecuencia de la interacción
 - Movimiento de la ventana.
 
 La clave de una interfaz gráfica está en responder a la interacción del usuario. Java swing lo hace mediante el siguiente modelo de eventos:
-1. El usuario interactúa con un componente (ej. pulsar un botón).
-2. El componente genera un evento (ej. ActionEvent, MouseEvent, etc.).
-3. Un listener (escuchador) detecta el evento.
-4. Se ejecuta el código asociado.
+1. El usuario interactúa con un **componente** (ej. pulsar un botón).
+2. El componente genera un **evento** (ej. ActionEvent, MouseEvent, etc.).
+3. Un **listener** o escuchador (ej. ActionListener)  detecta el evento.
+4. Se ejecuta el **código asociado**.
 
 ```java
 JButton btnSaludar = new JButton("Saludar");
 
-btnSaludar.addActionListener(e -> {
-    JOptionPane.showMessageDialog(null, "¡Hola mundo!");
+btnSaludar.addActionListener(new ActionListener() {
+
+    @Override
+    public void actionPerformed(ActionEvent evento) {
+
+        JOptionPane.showMessageDialog(
+            null,
+            "¡Hola mundo!"
+        );
+
+    }
 });
 ```
 
@@ -464,7 +473,7 @@ En Java, podremos distinguir entre dos tipos básicos de eventos:
 | *WindowsEvent*   | Este tipo de eventos se produce cuando una ventana ha sufrido algún tipo de variación, desde su apertura o cierre hasta el cambio de tamaño.                                                        |
 | *ActionEvent*    | Evento que se produce al detectarse la acción sobre un componente. Es uno de los más comunes, puesto que modela acciones tales como la pulsación sobre un botón o el check en un menú de selección. |
 
-### Componentes y eventos
+### Componentes y eventos asociados
 
 Cada **componente** utilizado en la interfaz tienen un evento en concreto asociado. Por ejemplo, no es lo mismo el tipo de detección asociado a un botón que la pulsación de una tecla. En el siguiente cuadro los vemos los más habituales:
 
