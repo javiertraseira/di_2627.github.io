@@ -584,7 +584,7 @@ Conjunto de objetos de clases que heredan de *java.awt.Component*
 
 ### Java Swing y el MVC
 
-Java Swing está diseñado siguiendo un patrón MVC, aunque no de forma pura como en frameworks web modernos.
+Java Swing utiliza internamente una arquitectura inspirada en MVC para sus componentes, aunque no implementa un MVC puro.
 
 En Swing:
 - Modelo → representa los datos y la lógica. Ejemplo: DefaultTableModel en un JTable, ListModel en un JList, o el modelo de un JComboBox.
