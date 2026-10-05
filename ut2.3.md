@@ -716,9 +716,12 @@ Por eso aparece en el main generado de forma automática.
 ```java
 java.awt.EventQueue.invokeLater(() -> new VentanaPrincipal().setVisible(true));
 ```
+> invokeLater() le está diciendo a Java, aproximadamente: "Cuando el hilo de eventos de Swing esté disponible, crea y muestra esta ventana dentro de él"
+
+Swing espera que las modificaciones de la interfaz se hagan desde este hilo, para evitar problemas de sincronización.
 
 
-invokeLater() le está diciendo a Java, aproximadamente: "Cuando el hilo de eventos de Swing esté disponible, crea y muestra esta ventana dentro de él"
+También explica una cuestión que verán más adelante: no conviene realizar tareas largas dentro de un evento. Si, por ejemplo, se bloquea una operación durante 20 segundos el hilo no puede atender otras tareas de la interfaz. La ventana podría parecer **bloqueada**.
 
 
 ## Testing con AssertJ Swing
