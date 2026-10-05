@@ -701,6 +701,25 @@ Cuando se usa el GUI Builder Matisse de NetBeans:
 
 > En otras palabras: NetBeans no fuerza un verdadero MVC. Tan solo facilita la creación rápida de la Vista y los manejadores de eventos.
 
+### Event Dispatch Thread (EDT) 
+
+El Event Dispatch Thread (EDT) es, de forma muy general, el hilo principal que utiliza Swing para gestionar la interfaz gráfica.
+
+Se encarga de cosas como:
+- dibujar y actualizar componentes
+- responder a clics de botones
+- procesar eventos de teclado y ratón
+- ejecutar el código asociado a esos eventos.
+
+Por eso aparece en el main generado de forma automática.
+
+```java
+java.awt.EventQueue.invokeLater(() -> new VentanaPrincipal().setVisible(true));
+```
+
+
+invokeLater() le está diciendo a Java, aproximadamente: "Cuando el hilo de eventos de Swing esté disponible, crea y muestra esta ventana dentro de él"
+
 
 ## Testing con AssertJ Swing
 
