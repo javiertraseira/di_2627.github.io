@@ -18,7 +18,7 @@ La usabilidad se fundamenta principalmente en tres dimensiones:
 
 Además, existen otras características relacionadas con la usabilidad, como la facilidad de aprendizaje, la prevención de errores y la facilidad para recordar cómo funciona una aplicación.
 
-Es importante diferenciar la **usabilidad** de la **accesibilidad**. Mientras que la usabilidad estudia la facilidad con la que los usuarios alcanzan sus objetivos, la accesibilidad busca que las aplicaciones puedan ser utilizadas por personas con diferentes capacidades y necesidades. Ambos conceptos están estrechamente relacionados.
+> Es importante diferenciar la **usabilidad** de la **accesibilidad**. Mientras que la usabilidad estudia la facilidad con la que los usuarios alcanzan sus objetivos, la accesibilidad busca que las aplicaciones puedan ser utilizadas por personas con diferentes capacidades y necesidades. Ambos conceptos están estrechamente relacionados.
 
 
 ![](media/d7aefe5c0a83b2ca113d7f65bd33e122.jpeg)
@@ -75,7 +75,6 @@ Dependiendo del tipo de operación, podemos utilizar diferentes indicadores:
 
 La navegación de una aplicación debe permitir que el usuario encuentre fácilmente las funciones y contenidos que necesita, evitando recorridos confusos o innecesariamente largos.
 
-
 #### Navegación clara y regla de las tres pulsaciones
 
 La navegación de una aplicación debe permitir que el usuario encuentre fácilmente las funciones y contenidos que necesita para realizar sus tareas.
@@ -125,7 +124,7 @@ La confusión visual es muy perjudicial, y los proyectos que están muy cargados
 
 #### Legibilidad de los textos
 
-Los textos son la base de la mayoría de sitios web y  diversas aplicaciones.
+Los textos son la base de la mayoría de sitios web y diversas aplicaciones.
 
 Por este motivo, para mejorar la experiencia del usuario debemos prestar mucha atención en la legibilidad de los textos. La selección de la **tipografía** adecuada también es crítica en este aspecto, pero también el tamaño por defecto de la letra, el contraste entre texto y fondo, textos con una longitud adecuada, interlineado, etc. 
 
@@ -142,7 +141,6 @@ El diseño responsive es prácticamente un requerimiento obligatorio para cualqu
 Gracias al diseño responsive, los usuarios pueden disfrutar de una navegación adecuada según el dispositivo desde el cual accedan. Este tipo de diseño ayuda a navegar con mayor facilidad y a ver cada uno de los elementos a una escala adecuada. 
 
 ![](media/370cbbf27035c4008efc625d27ad6f03.jpg)
-
 
 A la hora de trabajar con interfaces en dispositivos móviles además debemos tener en cuenta la facilidad de acceso a zonas de la pantalla usando nuestras manos.
 
@@ -214,6 +212,7 @@ Por ejemplo, si el usuario inicia una importación de datos por equivocación, l
 
 ![](media/recuperacion_accion.png)
 
+
 ### Manejo de errores y protección del trabajo
 
 ![](media/manejo_errores.png)
@@ -246,9 +245,9 @@ Por ejemplo: cuando un usuario está finalizando un proceso de compra y está re
 
 ![](media/resumen_principios.png)
 
-## Medidas de usabilidad
+## Métricas de usabilidad
 
-Se definen las **métricas de usabilidad** como aquellas características de la interfaz que son medibles de forma **objetiva**.
+Se definen las medidas o **métricas de usabilidad** como aquellas características de la interfaz que son medibles de forma **objetiva**.
 
 Es decir, dejando a un lado interpretaciones personales, se trata de encontrar una forma que evalúe la usabilidad de manera cualitativa y cuantitativa. Estas características se suelen dividir en tres grupos:
 
@@ -410,13 +409,12 @@ Por tanto, complementa la evaluación de las características técnicas del prod
 Tal y como hemos visto en la unidad de usabilidad, un buen diseño de interfaz tienda a seguir principios generales o directrices generales para trabajar.
 
 ```note
-La User Experience (UX) es el conjunto de percepciones, emociones y respuestas que experimenta una persona antes, durante y después de utilizar un producto, aplicación o servicio.
+La User Experience (UX) o experiencia de usuario, es el conjunto de percepciones, emociones y respuestas que experimenta una persona antes, durante y después de utilizar un producto, aplicación o servicio.
 ```
 
 Aunque están estrechamente relacionadas, usabilidad y experiencia de usuario no son exactamente lo mismo:
 - **Usabilidad**: se centra en que el usuario pueda completar sus tareas de manera efectiva, eficiente y satisfactoria.
 - **Experiencia de usuario**: contempla la experiencia global del usuario, incluyendo sus expectativas, emociones y percepciones.
-
 
 Los 3 pilares de la experiencia de usuario:
 
