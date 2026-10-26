@@ -32,39 +32,51 @@ Las características más básicas de usabilidad de cualquier interfaz son funda
 -   Fácil de aprender: que no se necesite excesivo tiempo en aprender a trabajar con la aplicación y que sea sencillo recordar su funcionamiento.
 -   Elegante en su diseño: para favorecer la percepción del usuario y sus emociones.
 
-![](media/dd29c9d7e71411870832fff602148764.jpeg)
+![](media/usabilidad1.png)
 
-## Reglas de usabilidad
+## Principios generales de usabilidad
 
-### Tiempo de respuesta de la interfaz
+![](media/principios_usabilidad.png)
 
-Una interfaz debe responder con rapidez a las acciones del usuario.
+### Tiempo de respuesta y retroalimentación
 
-Cuando un usuario debe esperar más de dos segundos para obtener una respuesta a una acción sencilla realizada en una aplicación, es muy posible que se impaciente y abandone la página o aplicación en busca de otra plataforma que le ofrezca mejores resultados.
+![](media/tiempo_respuesta.png)
 
-Además de dicha regla debe combinarse con las siguientes:
+Una interfaz debe responder con **rapidez** a las acciones del usuario y **mantenerlo informado** sobre el estado de la aplicación.
 
--   Todas las opciones de menú, iconos, etc. deben ofrecer una respuesta visual inmediata y si tienen animaciones que sean lo más rápidas posibles.
--   Debe bloquearse la posibilidad de que el sistema inicie un proceso repetidamente después de varios clics sucesivos en un mismo botón. Esto puede ocurrir con frecuencia cuando se trata de usuarios inexpertos o en entornos de ejecución lenta.
--   El usuario ha de poder cancelar cualquier proceso en cualquier momento.
--   Cuando una operación no pueda completarse inmediatamente, mostrar información sobre su estado (*feedback de información de espera*).
+#### Tiempo de respuesta
 
+La aplicación debe responder de manera perceptible a las acciones del usuario, especialmente en operaciones sencillas, como seleccionar una opción de menú o pulsar un botón.
 
-### Feedback de información de espera
+Aunque tradicionalmente se ha utilizado la regla de los dos segundos, no existe un tiempo máximo universal. La respuesta esperada depende del tipo de operación.
+
+Para mejorar el tiempo de respuesta y la interacción se recomienda:
+
+- Proporcionar una respuesta visual inmediata al interactuar con botones, menús y otros controles.
+- Evitar animaciones innecesariamente prolongadas que retrasen la realización de las tareas.
+- Prevenir operaciones duplicadas cuando el usuario pulse repetidamente un botón mientras se procesa una acción.
+- Evitar bloqueos innecesarios de la interfaz durante operaciones prolongadas.
+
+#### Retroalimentación
 
 La retroalimentación (feedback) consiste en informar al usuario sobre el estado de la aplicación y el resultado de sus acciones.
 
-Cuando una operación requiere cierto tiempo de ejecución, la aplicación debe indicar que está trabajando para evitar que el usuario piense que se ha bloqueado.
-
 Dependiendo del tipo de operación, podemos utilizar diferentes indicadores:
-- Indicador de actividad (spinner): animación que muestra que una operación está en curso, aunque no se conozca cuánto tiempo falta para finalizar.
-- Barra de progreso: representación visual que indica qué porcentaje de una tarea se ha completado, cuando es posible medir su avance.
-- Mensajes de estado: textos que informan de la operación que se está realizando, como Conectando con el servidor o Generando informe.
+- **Indicador de actividad (spinner)**: animación que muestra que una operación está en curso, aunque no se conozca cuánto tiempo falta para finalizar.
+- **Barra de progreso**: representación visual que indica qué porcentaje de una tarea se ha completado, cuando es posible medir su avance.
+- **Mensajes de estado**: textos que informan de la operación que se está realizando, como *Conectando con el servidor* o *Generando informe*.
 
 
 ![](media/6b337509b8421b62dab1b0eec885eeb3.png) 
 
-### Regla de las tres pulsaciones
+### Navegación y eficiencia de uso
+
+![](media/navegacion_efi.png)
+
+La navegación de una aplicación debe permitir que el usuario encuentre fácilmente las funciones y contenidos que necesita, evitando recorridos confusos o innecesariamente largos.
+
+
+#### Navegación clara y regla de las tres pulsaciones
 
 La navegación de una aplicación debe permitir que el usuario encuentre fácilmente las funciones y contenidos que necesita para realizar sus tareas.
 
@@ -72,18 +84,46 @@ Tradicionalmente se ha utilizado la denominada **regla de los tres clics**, seg�
 
 👉 Lo importante no es minimizar siempre el número de clics, sino reducir el esfuerzo necesario para completar una tarea.
 
-
 ![](media/regla_pulsaciones.png)
 
-### Espacio entre elementos
+#### Interfaz explorable
 
-Tal y como ocurre con toda composición visual, el espacio es necesario. Los espacios bien utilizados dan a los usuarios tiempo para pensar y observar el espacio sin estar bombardeados de textos e imágenes.
+La estructura de una aplicación debe estar diseñada de manera que el usuario sepa qué **rutas** existen, y cómo llegar hasta cualquier punto del sistema.
+
+No obstante, esto no implica que se fuerce al usuario a seguir un camino definido, impidiéndole cualquier otra acción. El usuario debe sentir que tiene libertad para navegar por el sistema, y que no va a caer en caminos sin salida.
+
+Junto con la capacidad para investigar el entorno, debe existir una **ruta rápida** para acceder a los contenidos, de manera que tanto el usuario que requiere rapidez como el que quiere explorar el entorno puedan sentirse satisfechos.
+
+![](media/71020582fd70d85ba845d63650787354.jpeg)
+
+#### Atajos de teclado
+
+Los **atajos de teclado** son combinaciones de teclas que permiten ejecutar determinadas acciones de una aplicación sin necesidad de utilizar el ratón.
+
+Son especialmente útiles en aplicaciones de escritorio, ya que pueden mejorar la eficiencia de los usuarios que realizan frecuentemente las mismas operaciones.
+
+Algunos ejemplos habituales en sistemas Windows o Linux son:
+- Ctrl + C: copiar el contenido seleccionado.
+- Ctrl + V: pegar contenido.
+- Ctrl + Z: deshacer la última acción.
+- Ctrl + S: guardar un documento o los cambios realizados, cuando la aplicación incorpora esta función.
+
+
+### Claridad visual y adaptación de la interfaz
+
+![](media/claridad_visual.png)
+
+Una interfaz debe presentar la información de forma clara, organizada y legible, evitando que una distribución inadecuada dificulte su utilización.
+
+#### Espacio entre elementos
+
+Tal y como ocurre con toda composición visual, el **espacio** es necesario. Los espacios bien utilizados dan a los usuarios tiempo para pensar y observar el espacio sin estar bombardeados de textos e imágenes.
 
 La confusión visual es muy perjudicial, y los proyectos que están muy cargados son tremendamente molestos. El espacio puede ser de cualquier color de fondo.
 
 ![](media/9d94ea420e7c0e7c989862b9ecd5f933.jpeg) 
 
-### Legibilidad de los textos
+#### Legibilidad de los textos
 
 Los textos son la base de la mayoría de sitios web y  diversas aplicaciones.
 
@@ -91,23 +131,35 @@ Por este motivo, para mejorar la experiencia del usuario debemos prestar mucha a
 
 ![](media/7b38e68438cbd5b78d682f4bcaae9bf9.png)![](media/9a774fee1eae2cbb400eeb23dc90eb2e.png)
 
-### Uso de diálogos modales
+#### Diseño adaptable a diferentes pantallas
 
-Un **diálogo modal** es una ventana que requiere la atención o intervención del usuario antes de permitirle continuar interactuando con el resto de la aplicación.
+```note
+El **diseño responsive** o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos.
+```
 
-Los diálogos modales son útiles cuando necesitamos que el usuario tome una decisión importante, confirme una operación o proporcione información necesaria para continuar.
+El diseño responsive es prácticamente un requerimiento obligatorio para cualquier sitio web. Este concepto se utiliza especialmente en el desarrollo web, aunque el principio de adaptación también es importante en las aplicaciones de escritorio y móviles.
 
-Las ventanas de diálogo modales **suspenden temporalmente** todas las acciones, y obligan al usuario a responder a la cuestión expuesta en la ventana; deberían aparecer solamente en procesos breves. 
-Para las notificaciones que no requieren una respuesta inmediata, pueden utilizarse mensajes no modales, como avisos dentro de la ventana o notificaciones temporales.
+Gracias al diseño responsive, los usuarios pueden disfrutar de una navegación adecuada según el dispositivo desde el cual accedan. Este tipo de diseño ayuda a navegar con mayor facilidad y a ver cada uno de los elementos a una escala adecuada. 
+
+![](media/370cbbf27035c4008efc625d27ad6f03.jpg)
 
 
-### Coherencia y consistencia
+A la hora de trabajar con interfaces en dispositivos móviles además debemos tener en cuenta la facilidad de acceso a zonas de la pantalla usando nuestras manos.
 
-El respeto de la **consistencia** tanto en la forma como en la función es un factor clave en la usabilidad de una interfaz; el comportamiento de los elementos de una aplicación debe ser constante y predecible.
+![](media/07bca66944c4a76610ce393b3718e733.jpeg)
+
+
+### Coherencia y facilidad de aprendizaje
+
+![](media/coherencia_facilidad.png)
+
+La **coherencia y facilidad de aprendizaje** son fundamentales para que el comportamiento de los elementos de una aplicación resulte constante y predecible.
+
+#### Coherencia y consistencia
 
 La **consistencia** supone la fijación de unas constantes representativas a lo largo de una aplicación, de manera que el mismo tipo de información llegue al usuario siempre de idéntica forma. 
 
-![](media/8cc46ec090c96c3f9e48cdb2b679e02f.jpeg)![](media/9c7250691c14dd2654b96ed099afbd0a.png)
+![](media/consistencia.png)
 
 La consistencia también se refiere a la experiencia del usuario. Se facilita el uso de una aplicación cuando se respetan los conceptos de diseño que se han convertido en estándares en el entorno cultural del usuario. 
 
@@ -131,17 +183,12 @@ Se pueden consultar los **patrones** de interfaces más comunes en páginas que 
 
 ![](media/3db408e0a99128075692d5197bb2ba55.jpeg)
 
-### Atajos de teclado
+Un **diálogo modal** es una ventana que requiere la atención o intervención del usuario antes de permitirle continuar interactuando con el resto de la aplicación.
 
-Los **atajos de teclado** son combinaciones de teclas que permiten ejecutar determinadas acciones de una aplicación sin necesidad de utilizar el ratón.
+Los diálogos modales son útiles cuando necesitamos que el usuario tome una decisión importante, confirme una operación o proporcione información necesaria para continuar.
 
-Son especialmente útiles en aplicaciones de escritorio, ya que pueden mejorar la eficiencia de los usuarios que realizan frecuentemente las mismas operaciones.
-
-Algunos ejemplos habituales en sistemas Windows o Linux son:
-- Ctrl + C: copiar el contenido seleccionado.
-- Ctrl + V: pegar contenido.
-- Ctrl + Z: deshacer la última acción.
-- Ctrl + S: guardar un documento o los cambios realizados, cuando la aplicación incorpora esta función.
+Las ventanas de diálogo modales **suspenden temporalmente** todas las acciones, y obligan al usuario a responder a la cuestión expuesta en la ventana; deberían aparecer solamente en procesos breves. 
+Para las notificaciones que no requieren una respuesta inmediata, pueden utilizarse mensajes no modales, como avisos dentro de la ventana o notificaciones temporales.
 
 ### Manejo de errores
 
@@ -166,32 +213,6 @@ Por ejemplo: cuando un usuario está finalizando un proceso de compra y está re
 
 ![](media/c4cec05b8aacc12d2050b55deae4a73e.png)
 
-### Interfaz explorable
-
-La estructura de una aplicación debe estar diseñada de manera que el usuario sepa qué **rutas** existen, y cómo llegar hasta cualquier punto del sistema.
-
-No obstante, esto no implica que se fuerce al usuario a seguir un camino definido, impidiéndole cualquier otra acción. El usuario debe sentir que tiene libertad para navegar por el sistema, y que no va a caer en caminos sin salida.
-
-Junto con la capacidad para investigar el entorno, debe existir una **ruta rápida** para acceder a los contenidos, de manera que tanto el usuario que requiere rapidez como el que quiere explorar el entorno puedan sentirse satisfechos.
-
-![](media/71020582fd70d85ba845d63650787354.jpeg)
-
-### Diseño responsive
-
-```note
-El **diseño responsive** o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos.
-```
-
-El diseño responsive es prácticamente un requerimiento obligatorio para cualquier sitio web. Este concepto se utiliza especialmente en el desarrollo web, aunque el principio de adaptación también es importante en las aplicaciones de escritorio y móviles.
-
-Gracias al diseño responsive, los usuarios pueden disfrutar de una navegación adecuada según el dispositivo desde el cual accedan. Este tipo de diseño ayuda a navegar con mayor facilidad y a ver cada uno de los elementos a una escala adecuada. 
-
-![](media/370cbbf27035c4008efc625d27ad6f03.jpeg)
-
-
-A la hora de trabajar con interfaces en dispositivos móviles además debemos tener en cuenta la facilidad de acceso a zonas de la pantalla usando nuestras manos.
-
-![](media/07bca66944c4a76610ce393b3718e733.jpeg)
 
 ## Medidas de usabilidad
 
