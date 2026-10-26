@@ -161,8 +161,8 @@ La **consistencia** supone la fijación de unas constantes representativas a lo 
 
 ![](media/consistencia.png)
 
-La consistencia también se refiere a la experiencia del usuario. Se facilita el uso de una aplicación cuando se respetan los conceptos de diseño que se han convertido en estándares en el entorno cultural del usuario. 
-
+La consistencia también se refiere a la experiencia del usuario. Se facilita el uso de una aplicación cuando se respetan los conceptos de diseño que se han convertido en estándares en el entorno cultural del usuario, usando una **terminología uniforme**.
+ 
 La consistencia debe respetarse también en:
 
 -  **Acciones**: para tareas similares, el usuario debe poder ejecutar la misma secuencia de acciones.
@@ -171,26 +171,52 @@ La consistencia debe respetarse también en:
 
 Para lograr esto es recomendable utilizar una **guía de estilo** unificada y estándar para nuestra aplicación.
 
-### Curva de aprendizaje
+#### Curva de aprendizaje
+
+La **curva de aprendizaje** representa cómo evoluciona el dominio de una aplicación a medida que el usuario adquiere experiencia utilizándola.
 
 Los usuarios se encuentran más cómodos en aplicaciones o sitios web que resulten fáciles de utilizar y que sigan las guías de estilo proporcionadas por el sistema operativo desde donde se manejan.
 
-En este sentido, debe ser tan sencillo utilizar la interfaz que la curva de aprendizaje sea mínima. Se puede aprovechar la asociación para facilitar el aprendizaje de los diferentes procesos.
+Por ejemplo, los iconos de una papelera o una lupa suelen asociarse con las acciones de eliminar y buscar, respectivamente.
 
-Existen muchos iconos universales que los usuarios ya comprenden de manera intuitiva, por ejemplo: las barras que indican el menú, los iconos de redes sociales para compartir algún contenido de forma directa o flechas que invitan a deslizar ciertos contenidos.
+#### Modelos de patrones y convenciones
 
 Se pueden consultar los **patrones** de interfaces más comunes en páginas que se dedican a recopilarlos, como [UI Patterns](http://ui-patterns.com/patterns) o en [UI Garage](https://uigarage.net/).
 
 ![](media/3db408e0a99128075692d5197bb2ba55.jpeg)
 
+### Control y libertad del usuario
+
+![](media/control_libertad.png)
+
+#### Uso adecuado de diálogos modales
+
 Un **diálogo modal** es una ventana que requiere la atención o intervención del usuario antes de permitirle continuar interactuando con el resto de la aplicación.
 
 Los diálogos modales son útiles cuando necesitamos que el usuario tome una decisión importante, confirme una operación o proporcione información necesaria para continuar.
 
-Las ventanas de diálogo modales **suspenden temporalmente** todas las acciones, y obligan al usuario a responder a la cuestión expuesta en la ventana; deberían aparecer solamente en procesos breves. 
-Para las notificaciones que no requieren una respuesta inmediata, pueden utilizarse mensajes no modales, como avisos dentro de la ventana o notificaciones temporales.
+![](media/modal_window.png)
 
-### Manejo de errores
+Las ventanas de diálogo modales **suspenden temporalmente** todas las acciones, y obligan al usuario a responder a la cuestión expuesta en la ventana; deberían aparecer solamente en procesos breves. 
+
+Para las **notificaciones** que no requieren una respuesta inmediata, pueden utilizarse mensajes no modales, como avisos dentro de la ventana o notificaciones temporales.
+
+#### Cancelación y recuperación de acciones
+
+El usuario debe disponer de mecanismos que le permitan mantener el control de las operaciones que realiza.
+
+Para ello, se recomienda:
+- Permitir cancelar operaciones cuando sea técnicamente posible y seguro.
+- Ofrecer la posibilidad de deshacer acciones cuando resulte apropiado.
+- Facilitar la corrección de decisiones sin obligar a repetir todo el proceso.
+
+Por ejemplo, si el usuario inicia una importación de datos por equivocación, la aplicación debería permitir cancelarla cuando sea posible sin comprometer la integridad de la información.
+
+![](media/recuperacion_accion.png)
+
+### Manejo de errores y protección del trabajo
+
+![](media/manejo_errores.png)
 
 Una plataforma debe estar diseñada de forma que si hay una incidencia al acceder a cualquiera de sus partes muestre un error claro al usuario.
 
@@ -205,9 +231,11 @@ Una plataforma debe estar diseñada de forma que si hay una incidencia al accede
 En dicha página los usuarios deben poder ver el mensaje de error y volver a inicio o home. Además, esta "página no encontrada" también debe estar diseñada conforme a la estética de la guía de estilo que hayamos utilizado.
 ![](media/8f8c968bc342a11c714d9149b43f70f6.jpeg)
 
-### Protección del trabajo del usuario
+#### Protección del trabajo del usuario
 
-Relacionado con la anterior regla, la protección del trabajo de los usuarios es algo prioritario, se debe asegurar que el usuario **nunca pierda el trabajo realizado como consecuencia de un error**. 
+La protección del trabajo realizado es un aspecto prioritario de la usabilidad.
+
+Una aplicación debe intentar evitar que los usuarios pierdan información como consecuencia de errores, interrupciones o acciones accidentales.
 
 Por ejemplo: cuando un usuario está finalizando un proceso de compra y está rellenando todos sus datos, si hubiera algún error en el proceso se debería recuperar el carrito de compra y los datos que fueran introducidos previamente.
 
