@@ -544,16 +544,12 @@ El objetivo es que el usuario pueda comprender, manejar y disfrutar la aplicaci�
 
 Los tooltips (mensajes emergentes) son una buena herramienta para mejorar la experiencia de usuario, especialmente en botones o campos de texto cuyo propósito no sea evidente.
 
-En Swing, se usa:
-
-```java
-botonGuardar.setToolTipText("Guardar los cambios realizados");
-``` 
 
 Además, mejor que los tooltips, las aplicaciones pueden proporcionar ayuda contextual mediante **textos explicativos** junto a los campos, mensajes informativos o enlaces a documentación específica.
 
 ![](media/tooltip.png)
 
+También podrían utilizarse **asistentes inteligentes** que proporcionen ayuda contextual mediante lenguaje natural.
 
 ### Consistencia en la interfaz
 
