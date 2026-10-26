@@ -1,4 +1,4 @@
-# UT3.1 Usabilidad
+# UT3.1 Usabilidad y UX
 
 ## Usabilidad
 
