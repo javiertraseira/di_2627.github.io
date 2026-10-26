@@ -229,6 +229,7 @@ Una plataforma debe estar diseñada de forma que si hay una incidencia al accede
 - Permitir **corregir o deshacer acciones**: facilitar la recuperación ante operaciones incorrectas cuando sea posible.
 -   En el caso de **plataformas web**, si se produce una incidencia al acceder a una página, bien porque se haya eliminado o cambiado la *url*, aparezca la redirección correspondiente o el mensaje de error informativo (denominado *error 404* o *página no encontrada*).
 En dicha página los usuarios deben poder ver el mensaje de error y volver a inicio o home. Además, esta "página no encontrada" también debe estar diseñada conforme a la estética de la guía de estilo que hayamos utilizado.
+
 ![](media/8f8c968bc342a11c714d9149b43f70f6.jpeg)
 
 #### Protección del trabajo del usuario
@@ -241,12 +242,17 @@ Por ejemplo: cuando un usuario está finalizando un proceso de compra y está re
 
 ![](media/c4cec05b8aacc12d2050b55deae4a73e.png)
 
+### Resumen de los principios generales de usabilidad
+
+![](media/resumen_principios.png)
 
 ## Medidas de usabilidad
 
 Se definen las **métricas de usabilidad** como aquellas características de la interfaz que son medibles de forma **objetiva**.
 
 Es decir, dejando a un lado interpretaciones personales, se trata de encontrar una forma que evalúe la usabilidad de manera cualitativa y cuantitativa. Estas características se suelen dividir en tres grupos:
+
+![](media/metricas_usabilidad.png)
 
 - **Efectividad**:Determina el grado de éxito de una aplicación. Se miden las tareas completadas, accesos a documentación o soporte, funciones aprendidas y errores tolerados.
 - **Eficiencia**: Mide los recursos necesarios para completar una tarea en relación con los resultados obtenidos. Habitualmente se evalúa mediante el tiempo empleado o el esfuerzo necesario para el objetivo.
@@ -274,6 +280,8 @@ Existen dos grandes enfoques para evaluar la usabilidad:
 
 ![](media/b3612bd1d890f15674bab4bff3d74434.jpeg)
 
+> ℹ️ Actualmente, ambos enfoques pueden complementarse con herramientas y  agentes de **inteligencia artificial (IA)** que facilitan la detección de problemas, la automatización de determinadas comprobaciones y el análisis de los resultados.
+
 ### Evaluación mediante pruebas de expertos
 
 Consiste en analizar una interfaz utilizando principios, recomendaciones y estándares de usabilidad.
@@ -285,27 +293,37 @@ Tipos de pruebas mediante expertos:
 -  **Evaluación heurística**: Verificación frente a heurísticas de diseño.
 -  **Revisión de normas**: Se revisa la interfaz para asegurarnos de que cumple con las normas establecidas.
 - **Inspección de consistencia**: Se hace a través de una familia de interfaces que conforman la aplicación.
-- **Inspección formal de usabilidad**: Técnica de evaluación formada por un grupo de expertos que realizan una especie de juicio, con uno de los participantes actuando como moderador, destacando las fortalezas y debilidades de la aplicación. En concreto, se pretenden encontrar problemas de
-    -   Diseño: color, vocabulario, presentación..
-    -   Navegación: controles, menús, búsquedas..
+- **Inspección formal de usabilidad**: varios especialistas analizan conjuntamente una interfaz, identificando y valorando problemas relacionados con su diseño, navegación y funcionamiento.
 
-![](media/34bdbfbca960766ddbe2e34ebd4a48db.png)
+**Uso de inteligencia artificial en la evaluación**
+
+Las herramientas de IA generativa también pueden ayudar a realizar estas evaluaciones mediante:
+- **Análisis de capturas de pantalla**: identificar posibles problemas de distribución, legibilidad, consistencia o utilización de controles.
+- **Evaluación heurística asistida**: contrastar una interfaz con principios de usabilidad y proponer mejoras.
+- **Agentes de IA**: explorar una aplicación y ejecutar determinadas secuencias de interacción para detectar posibles dificultades, cuando disponen de las herramientas necesarias.
+
+Por ejemplo, podemos proporcionar a una IA una captura de pantalla de una aplicación Java Swing y solicitarle que identifique posibles problemas de usabilidad, justificándolos mediante las heurísticas de Nielsen.
+
 
 ### Evaluación mediante pruebas con usuarios
 
 Las pruebas con los usuarios nos van a permitir obtener una valiosa información que será la base para lograr un diseño centrado en el usuario, sobre la que se construirán las etapas del producto final:
 
-**Metodologías** de pruebas con usuarios:
+**Principales técnicas utilizadas**
 
-- **Reunión**: Son encuentros que se hacen durante distintas etapas del proceso de desarrollo de software. Es aconsejable que en su realización siempre haya presente un experto actuando como moderador.
-- **Entrevistas y encuestas**: Las entrevistas serán contactos personalizados con usuarios y se pueden realizar de forma oral o escrita. Las encuestas deben ser escritas y revisadas por especialistas para asegurarnos que se van a evaluar los aspectos más complejos de la interfaz. Si la encuesta es online pueden ser colocadas en un sitio web o enlace final.
-- **Diseño participativo**: Se trata de una reunión entre los productores y una muestra de usuarios potenciales del producto final. El objetivo es que los usuarios participen en el diseño de la interfaz.
-Para ello, se toma nota de sus necesidades y expectativas y los productores les mostrarán la idea general de cómo quedaría el producto final. Se pueden aplicar metodologías clásicas de debate, como son la mesa redonda, el 
-*brain storming* (tormenta de ideas)…
+- **Pruebas de ejecución de tareas**: se solicita a los participantes que realicen determinadas operaciones mientras se observan sus acciones, errores y dificultades. También pueden medirse el tiempo empleado y las tareas completadas.
+- **Reuniones con usuarios**: encuentros realizados durante distintas etapas del desarrollo para conocer necesidades, valorar propuestas y recoger opiniones.  
+- **Entrevistas y encuestas:** permiten recopilar información sobre las necesidades, expectativas y satisfacción de los usuarios. Son técnicas complementarias a la observación de tareas.
+- **Diseño participativo**: los usuarios intervienen en el proceso de diseño, proponiendo ideas y valorando posibles soluciones mediante reuniones, debates o tormentas de ideas (*brainstorming*).
 
-**Una muestra de 5-10 usuarios es, en la mayoría de los casos, suficiente para detectar muchos problemas de usabilidad, pero los resultados no tienen validez estadística.**
+👉 Una muestra de **5-10 usuarios** es, en la mayoría de los casos, suficiente para detectar muchos problemas de usabilidad, pero los resultados no tienen validez estadística.
 
 La prueba con usuarios permitirá que detectemos cuáles son las tareas que les resultan más difíciles, así como los elementos de la interfaz que son menos comprensibles.
+
+**Uso de inteligencia artificial en las pruebas con usuarios**
+
+La IA puede facilitar diferentes fases del proceso. Sin embargo, los usuarios simulados por IA no sustituyen las pruebas con personas reales, ya que no reproducen de manera fiable todas sus necesidades, comportamientos y experiencias.
+
 
 ### Criterios de evaluación 
 
@@ -373,7 +391,7 @@ Por ejemplo, antes de desarrollar una aplicación de gestión empresarial, resul
 
 ### ISO/IEC 25010:2023 — Calidad del producto software
 
-Esta norma forma parte de la familia **SQuaRE**, dedicada a los requisitos y la evaluación de la calidad del software.
+Esta norma forma parte de la familia **SQuaRE** (*SQuaRE (System and Software Quality Requirements and Evaluation*), dedicada a los requisitos y la evaluación de la calidad del software.
 
 Establece un modelo de calidad que contempla distintas características de los productos software, como su comportamiento funcional, rendimiento, fiabilidad, seguridad y capacidad de interacción.
 
