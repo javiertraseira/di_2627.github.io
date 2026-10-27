@@ -195,7 +195,7 @@ Finalmente, localiza en *Overview / Connection information* los **datos de conex
 
 ![](media/aiven_data.png)
 
-###  Crear la conexión en NetBeans
+### Crear la conexión en NetBeans
 
 Ahora abre **NetBeans**:
 - Ve a Ventana → **Servicios** (Ctrl + 5).
@@ -215,6 +215,24 @@ Si NetBeans solicita una URL usa: `jdbc:mysql://HOST:PUERTO/agenda?sslMode=REQUI
 | Password | Contraseña generada |
 
 Finalmente, pulsa **Test Connection** para verificar la conectividad.
+
+### Agregar una tabla o datos
+
+Haz clic derecho sobre la conexión y selecciona Execute Command para pegar el siguiente código:
+
+```SQL
+USE test;
+
+CREATE TABLE prueba (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(80) NOT NULL,
+    apellidos VARCHAR(20) NULL
+);
+
+INSERT INTO prueba (nombre, telefono) VALUES
+    ('Maria', 'Zayas'),
+    ('Albert', "Sotomayor");
+```
 
 ## Preparar y ejecutar sentencias SQL
 
