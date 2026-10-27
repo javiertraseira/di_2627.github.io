@@ -206,15 +206,15 @@ Ahora abre **NetBeans**:
 
 Si NetBeans solicita una URL usa: `jdbc:mysql://HOST:PUERTO/agenda?sslMode=REQUIRED`
 
-| Campo de NetBeans | Valor |
+| Campo | Valor |
 |---|---|
-| Host | La dirección host de Aiven |
-| Port | El puerto usado por Aiven |
+| Host | Dirección host de Aiven |
+| Port | Puerto usado por Aiven |
 | Database | `agenda` |
-| User Name | El usuario que se indique |
-| Password | La contraseña de Aiven |
+| User Name | avnadmin (por defecto) |
+| Password | Contraseña generada |
 
-Pulsa **Test Connection** si aparece esa opción.
+Finalmente, pulsa **Test Connection** para verificar la conectividad.
 
 ## Preparar y ejecutar sentencias SQL
 
