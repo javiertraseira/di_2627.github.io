@@ -10,7 +10,7 @@ Su principal objetivo es garantizar una **apariencia coherente, consistente y un
 
 Además, permite mantener la consistencia visual cuando se realizan modificaciones o se incorporan nuevas funcionalidades a la aplicación.
 
-![Interfaz coherente en diferentes dispositivos](imagenes/d04-01.png)
+![Interfaz coherente en diferentes dispositivos](media/d04-01.png)
 
 Una guía de estilo establece las reglas visuales que deben aplicarse de forma consistente en una aplicación:
 
@@ -20,7 +20,7 @@ Una guía de estilo establece las reglas visuales que deben aplicarse de forma c
 - **Iconografía e imágenes:** recursos gráficos y criterios de utilización.
 - **Componentes visuales:** apariencia de botones, campos de texto, menús y otros controles.
 
-![Elementos de una guía de estilo](imagenes/d05-01.png)
+![Elementos de una guía de estilo](media/d05-01.png)
 
 Actualmente, muchas aplicaciones utilizan **sistemas de diseño** *(Design Systems),* que amplían el concepto tradicional de guía de estilo.
 
@@ -33,9 +33,9 @@ Además de establecer las normas visuales, incorporan:
 
 Algunos ejemplos conocidos son **Material Design (Google)** y **Fluent (Microsoft)**.
 
-![Material Design](imagenes/d06-01.jpg)
+![Material Design](media/d06-01.jpg)
 
-![Fluent](imagenes/d06-02.jpg)
+![Fluent](media/d06-02.jpg)
 
 ## Retícula y distribución de componentes
 
@@ -43,7 +43,7 @@ Una **retícula (*grid*)** es una estructura de referencia que permite organizar
 
 Generalmente, se basa en una división del espacio en **filas, columnas y áreas**, que facilitan la colocación de los componentes.
 
-![Retícula con áreas y espaciados](imagenes/d08-01.png)
+![Retícula con áreas y espaciados](media/d08-01.png)
 
 Al diseñar una interfaz, la retícula permite organizar los componentes siguiendo una estructura común. Para conseguir una distribución coherente debemos:
 
@@ -54,15 +54,15 @@ Al diseñar una interfaz, la retícula permite organizar los componentes siguien
 
 En **Java Swing**, esta organización se implementaba mediante gestores de disposición (*Layout Managers*), como BorderLayout, GridLayout o GridBagLayout. En breve veremos disposiciones web actuales como FlowLayout o GridLayout.
 
-![Distribución de un formulario de gestión de clientes](imagenes/d09-01.png)
+![Distribución de un formulario de gestión de clientes](media/d09-01.png)
 
 La retícula, puede basarse en cualquier tipo de escala como pudiera ser la orgánica, Fibonacci o irregulares.
 
-![Ejemplo de retícula en una página web](imagenes/d10-01.png)
+![Ejemplo de retícula en una página web](media/d10-01.png)
 
-![Retícula basada en la proporción áurea](imagenes/d10-03.png)
+![Retícula basada en la proporción áurea](media/d10-03.png)
 
-![Ejemplo de distribución irregular](imagenes/d10-04.png)
+![Ejemplo de distribución irregular](media/d10-04.png)
 
 ## Tipografía y legibilidad
 
@@ -75,7 +75,7 @@ Una elección adecuada de fuentes, tamaños y estilos permite:
 - **Facilitar la identificación** de las acciones y elementos de la interfaz.
 - **Mantener una apariencia coherente** en todas las pantallas de la aplicación.
 
-![Estructura y medidas de los caracteres tipográficos](imagenes/d12-01.png)
+![Estructura y medidas de los caracteres tipográficos](media/d12-01.png)
 
 ### Jerarquía tipográfica
 
@@ -88,7 +88,7 @@ En una interfaz podemos distinguir:
 - **Texto principal:** presenta la información habitual de la aplicación.
 - **Etiquetas y textos auxiliares:** identifican campos, ofrecen instrucciones o muestran información complementaria.
 
-![Jerarquía tipográfica en un formulario](imagenes/d13-01.png)
+![Jerarquía tipográfica en un formulario](media/d13-01.png)
 
 ### Familias tipográficas
 
@@ -100,11 +100,11 @@ Las fuentes tipográficas pueden clasificarse en diferentes familias según sus 
 
 La elección de una fuente debe priorizar la **legibilidad y la coherencia visual** de la aplicación.
 
-![Carácter de una fuente serif](imagenes/d14-01.png)
+![Carácter de una fuente serif](media/d14-01.png)
 
-![Carácter de una fuente sans serif](imagenes/d14-02.png)
+![Carácter de una fuente sans serif](media/d14-02.png)
 
-![Comparación de familias serif, sans serif y monoespaciada](imagenes/d15-01.png)
+![Comparación de familias serif, sans serif y monoespaciada](media/d15-01.png)
 
 > Inicialmente, se utilizaban las fuentes típicas que los usuarios tenían instaladas en sus dispositivos y distintos SO lo que daba lugar a problemas. Actualmente, gracias a que los navegadores soportan la directiva *@font-face*, es posible utilizar casi cualquier tipo de tipografía sin necesidad de que esté instalada en el dispositivo.
 
@@ -120,7 +120,7 @@ Los principales aspectos que debemos considerar son:
 - Interlineado (leading)
 - Alineación
 
-![Comparación de composición tipográfica deficiente y adecuada](imagenes/d16-01.png)
+![Comparación de composición tipográfica deficiente y adecuada](media/d16-01.png)
 
 ### Legibilidad
 
@@ -135,9 +135,9 @@ Para favorecerla, debemos tener en cuenta:
 
 Relacionado con la legibilidad está el contraste. El **contraste** es la diferencia de luminosidad entre el texto y su fondo. Un contraste insuficiente dificulta la lectura.
 
-![Contraste entre texto y fondo](imagenes/d18-01.png)
+![Contraste entre texto y fondo](media/d18-01.png)
 
-![Legibilidad de los textos en una interfaz móvil](imagenes/d18-02.png)
+![Legibilidad de los textos en una interfaz móvil](media/d18-02.png)
 
 ## Uso del color
 
@@ -145,7 +145,7 @@ El **color** es un elemento fundamental en el diseño de interfaces, ya que perm
 
 El uso del color debe ser **coherente en toda la aplicación**, evitando combinaciones excesivas o arbitrarias.
 
-![Mezcla de colores cian, magenta y amarillo](imagenes/d20-01.gif)
+![Mezcla de colores cian, magenta y amarillo](media/d20-01.gif)
 
 ### Armonía del color
 
@@ -153,13 +153,13 @@ La **armonía cromática** consiste en combinar colores de manera que se consiga
 
 Dos o más colores armonizan si su **saturación** es la misma.
 
-![Colores con la misma saturación](imagenes/d21-01.gif)
+![Colores con la misma saturación](media/d21-01.gif)
 
 Existen matices que combinan especialmente bien: son los **colores opuestos o complementarios** (los enfrentados en el círculo cromático).
 
-![Círculo cromático](imagenes/d21-02.gif)
+![Círculo cromático](media/d21-02.gif)
 
-![Tonalidades, colores opuestos y colores análogos](imagenes/d21-03.jpg)
+![Tonalidades, colores opuestos y colores análogos](media/d21-03.jpg)
 
 La **armonía cromática** consiste en combinar colores de manera que se consiga una apariencia visual equilibrada y coherente.
 
@@ -169,7 +169,7 @@ Existen diferentes formas de combinar colores:
 - **Análoga:** combina colores próximos entre sí en el círculo cromático.
 - **Complementaria:** utiliza colores opuestos en el círculo cromático para generar contraste y destacar elementos.
 
-![Paletas monocromática, análoga y complementaria](imagenes/d22-01.png)
+![Paletas monocromática, análoga y complementaria](media/d22-01.png)
 
 ### Paleta de colores
 
@@ -183,7 +183,7 @@ Algunos de los generadores de paletas de color son los siguientes:
 - **Paletton**: [paletton.com](https://paletton.com/)
 - **Chat de IA** 🤖: cualquiera puede ayudar a generar paletas.
 
-![Muestrario de colores](imagenes/d23-01.jpg)
+![Muestrario de colores](media/d23-01.jpg)
 
 ### Uso funcional de los colores
 
@@ -198,7 +198,7 @@ Habitualmente, se asignan diferentes funciones a los colores de una aplicación:
 
 Estas funciones deben mantenerse **coherentes en todas las pantallas** de la aplicación.
 
-![Colores primario, secundario, de fondo, de éxito y de error](imagenes/d24-01.png)
+![Colores primario, secundario, de fondo, de éxito y de error](media/d24-01.png)
 
 ## Iconografía
 
@@ -210,7 +210,7 @@ Los iconos se pueden encontrar en **formatos** diferentes, que veremos a continu
 - Imagen vectorizada: SVG.
 - Fuentes tipográficas o emojis: las fuentes de texto pueden ofrecer iconos sencillos para la representación de elementos de la interfaz.
 
-![Familias de iconos con distintos estilos visuales](imagenes/d27-01.png)
+![Familias de iconos con distintos estilos visuales](media/d27-01.png)
 
 ## Imágenes y formatos gráficos
 
@@ -220,7 +220,7 @@ Además de cumplir ciertos requisitos de calidad y formato, se debe tener en cue
 
 Una de las características más importantes que tener en cuenta es el **formato** de las imágenes, puesto que de esta forma se define la calidad visual frente al peso de las ilustraciones.
 
-![Representación de una imagen mediante píxeles](imagenes/d29-01.jpg)
+![Representación de una imagen mediante píxeles](media/d29-01.jpg)
 
 ### Imágenes de mapa de bits
 
@@ -232,7 +232,7 @@ Por esta razón, son indicadas para aquellas imágenes en las que es deseable mo
 
 La calidad de estas imágenes depende de la cantidad de píxeles utilizados en su representación (PPP). Una de las desventajas principales de las imágenes bitmap es que no permiten un **cambio de escala** significativo, puesto que aparece el llamado **pixelado**.
 
-![Detalle de una imagen de mapa de bits](imagenes/d30-01.png)
+![Detalle de una imagen de mapa de bits](media/d30-01.png)
 
 ### Imágenes vectorizadas
 
@@ -244,17 +244,17 @@ Las imágenes vectoriales mantendrán su forma independientemente de cuán grand
 
 No son adecuados para describir imágenes demasiado irregulares (un paisaje de fotografía real), ya que necesitaría millones de fórmulas para ello.
 
-![Logotipo vectorial](imagenes/d31-01.png)
+![Logotipo vectorial](media/d31-01.png)
 
-![Construcción de curvas vectoriales](imagenes/d31-02.png)
+![Construcción de curvas vectoriales](media/d31-02.png)
 
-![Ilustración vectorial](imagenes/d31-03.jpg)
+![Ilustración vectorial](media/d31-03.jpg)
 
 ### Bitmap vs vector
 
 **Mapa de bits** &nbsp;&nbsp; **Vector**
 
-![Comparación entre mapa de bits y vector](imagenes/d32-01.png)
+![Comparación entre mapa de bits y vector](media/d32-01.png)
 
 ### Compresión de imágenes
 
@@ -267,7 +267,7 @@ Hay dos clases principales de compresión:
 - **Compresión con pérdida (Lossy):** elimina parte de la información de la imagen para reducir su tamaño, pudiendo disminuir su calidad.
 - **Compresión sin pérdida (Lossless):** reduce el tamaño del archivo conservando toda la información original de la imagen.
 
-![Comparación de compresión sin pérdida y con pérdida](imagenes/d33-01.png)
+![Comparación de compresión sin pérdida y con pérdida](media/d33-01.png)
 
 ### Formatos de mapa de bits
 
@@ -291,7 +291,7 @@ Los formatos vectoriales representan imágenes mediante formas geométricas, lo 
 | **AI** | Formato nativo de Adobe Illustrator, pensado para edición. | Diseño y creación de gráficos vectoriales. |
 | **EPS** | Formato tradicional de intercambio de gráficos. | Impresión y compatibilidad con programas antiguos. |
 
-![Icono de un archivo vectorial](imagenes/d35-01.png)
+![Icono de un archivo vectorial](media/d35-01.png)
 
 ### Elección de formato de imagen
 
@@ -396,7 +396,7 @@ Definir la apariencia y los estados de los componentes para mantener un diseño 
 | **Etiquetas (JLabel)** | Tipografía y alineación coherentes con los campos asociados. |
 | **Tablas (JTable)** | Encabezados diferenciados, filas legibles y selección visible. |
 
-![Estados normal, al pasar el ratón, enfocado y deshabilitado de un botón](imagenes/d43-01.png)
+![Estados normal, al pasar el ratón, enfocado y deshabilitado de un botón](media/d43-01.png)
 
 ### Comprobación de una guía de estilo
 
@@ -412,18 +412,18 @@ La guía debe permitir que **diferentes desarrolladores** puedan crear **nuevas 
 
 ### Ejemplos de sistemas de diseño
 
-![Ejemplos de guías de estilo de marcas](imagenes/d45-01.png)
+![Ejemplos de guías de estilo de marcas](media/d45-01.png)
 
 [https://jesusmaceira.com/7-guias-de-estilo-de-marcas-para-inspirar-tu-diseno/](https://jesusmaceira.com/7-guias-de-estilo-de-marcas-para-inspirar-tu-diseno/)
 
-![Human Interface Guidelines de Apple](imagenes/d46-01.png)
+![Human Interface Guidelines de Apple](media/d46-01.png)
 
 [https://developer.apple.com/design/](https://developer.apple.com/design/)
 
-![Material Design](imagenes/d47-01.png)
+![Material Design](media/d47-01.png)
 
 [https://m3.material.io/design](https://m3.material.io/design)
 
-![Principios de diseño de Windows 11](imagenes/d48-01.png)
+![Principios de diseño de Windows 11](media/d48-01.png)
 
 [https://fluent2.microsoft.design/](https://fluent2.microsoft.design/)
