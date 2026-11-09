@@ -100,9 +100,7 @@ Las fuentes tipográficas pueden clasificarse en diferentes familias según sus 
 
 La elección de una fuente debe priorizar la **legibilidad y la coherencia visual** de la aplicación.
 
-![Carácter de una fuente serif](media/d14-01.png)
-
-![Carácter de una fuente sans serif](media/d14-02.png)
+![Carácter de una fuente serif](media/d14-01.png) ![Carácter de una fuente sans serif](media/d14-02.png)
 
 ![Comparación de familias serif, sans serif y monoespaciada](media/d15-01.png)
 
@@ -247,8 +245,6 @@ No son adecuados para describir imágenes demasiado irregulares (un paisaje de f
 ![Logotipo vectorial](media/d31-01.png)
 
 ![Construcción de curvas vectoriales](media/d31-02.png)
-
-![Ilustración vectorial](media/d31-03.jpg)
 
 ### Bitmap vs vector
 
