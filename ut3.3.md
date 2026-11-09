@@ -312,8 +312,7 @@ La **elección del formato** depende del *tipo de imagen, la calidad necesaria, 
         Fecha: [dd/mm/aaaa]
 
         Objetivo:
-
-        establecer las normas visuales que deben aplicarse en las distintas pantallas de una aplicación para garantizar una apariencia coherente y uniforme.
+        Establecer las normas visuales que deben aplicarse en las distintas pantallas de una aplicación para garantizar una apariencia coherente y uniforme.
 
         1. Paleta de colores
         2. Distribución y espaciados
@@ -365,11 +364,9 @@ Definir las fuentes, tamaños y estilos de texto que se utilizarán en la aplica
 
 Definir los iconos utilizados en la aplicación para mantener una apariencia visual coherente y facilitar la identificación de las acciones.
 
-Estilo: [*Plano / Material Design / Línea fina / etc*.]
-
-Tamaño estándar: 16x16 px para botones pequeños, 24x24px para iconos principales.
-
-Formato: PNG o SVG (si se usa librería compatible).
+- Estilo: [*Plano / Material Design / Línea fina / etc*.]
+- Tamaño estándar: 16x16 px para botones pequeños, 24x24px para iconos principales.
+- Formato: **PNG** o **SVG** (si se usa librería compatible).
 
 | **Elemento** | **Icono** | **Acción** |
 | --- | --- | --- |
