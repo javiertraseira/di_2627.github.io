@@ -417,7 +417,7 @@ Para generar una aplicación autocontenida en Windows:
 
 1. Generar el JAR con dependencias mediante Maven.
 2. Copiarlo a una carpeta denominada input.
-3. Ejecutar el siguiente comando desde **PowerShell**:
+3. Ejecutar el siguiente comando desde una consola de **PowerShell**:
 
 ```powershell
 jpackage --type app-image `
@@ -451,7 +451,7 @@ El **resultado generado** será el siguiente:
 
 ### Inno Setup
 
-Inno Setup es una herramienta de código abierto que permite generar instaladores personalizados para aplicaciones Windows.
+Inno Setup es una herramienta de código abierto que permite generar **instaladores personalizados** para aplicaciones Windows.
 
 Sus principales funcionalidades son:
 
@@ -465,7 +465,7 @@ Sus principales funcionalidades son:
 
 ![Capturas de Inno Setup y de un asistente de instalación](media/inno-setup-ejemplo.png)
 
-Inno Setup utiliza archivos de configuración denominados scripts de instalación, con extensión .iss (Inno Setup Script).
+Inno Setup utiliza archivos de configuración denominados scripts de instalación, con extensión *.iss* (Inno Setup Script).
 
 Estos archivos definen:
 
