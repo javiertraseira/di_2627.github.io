@@ -413,7 +413,7 @@ Sus principales características son:
 Para generar una aplicación autocontenida en Windows:
 
 1. Generar el JAR con dependencias mediante Maven.
-2. Copiarlo a una carpeta denominada input.
+2. Copiarlo a una carpeta denominada *input*.
 3. Ejecutar el siguiente comando desde una consola de **PowerShell**:
 
 ```powershell
