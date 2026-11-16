@@ -190,6 +190,8 @@ Para utilizar las herramientas de Java desde la línea de comandos, podemos conf
 - **JAVA\_HOME:** indica la ubicación del JDK instalado en el equipo.
 - **PATH:** contiene los directorios en los que el sistema operativo busca los programas ejecutables.
 
+> ⚠️ En los proyectos que hemos creado en Netbeans se instaló una versión propia del OpenJDK. Copia esa ruta (por ejemplo *C:\Users\javier\Documents\NetBeansJDKs\microsoft-jdk-21.0.12\jdk-21.0.12*) al JAVA\_HOME para hacer que la versión con la que compilaste Java esté disponible, al igual que sus herramientas como *jpackage*. 
+
 En Windows:
 
 ```bat
@@ -278,7 +280,7 @@ Para que sea ejecutable mediante `java -jar`, debemos indicar la clase principal
 
 Si una aplicación Swing usa **librerías externas** (por ejemplo, *mysql-connector*, *json-simple*, etc.) el **.jar** generado por defecto **no las incluirá**.
 
-Para que el jar contenga todas las **dependencias**, se debe usar *maven-assembly-plugin*:
+Para que el *jar* contenga todas las **dependencias**, se debe usar *maven-assembly-plugin*:
 
 ```xml
 <plugin>
@@ -414,6 +416,8 @@ Para generar una aplicación autocontenida en Windows:
 
 1. Generar el JAR con dependencias mediante Maven.
 2. Copiarlo a una carpeta denominada *input*.
+3. Verifica que tienes la herramienta *jpackage* accesible, ejecutando `jpackage --version`
+    - Si no es el caso configura correctamente las variables *JAVA_HOME* y *PATH*
 3. Ejecutar el siguiente comando desde una consola de **PowerShell**:
 
 ```powershell
