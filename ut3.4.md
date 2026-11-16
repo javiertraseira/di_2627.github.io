@@ -115,8 +115,6 @@ En los sistemas Operativos móviles se usan los siguientes sistemas:
 
 ![Icono de archivo AAB](media/android-aab.jpeg)
 
-![Generación de APK optimizados para distintos dispositivos a partir de un AAB](media/distribucion-aab.png)
-
 > El desarrollador puede publicar un único archivo AAB y Google Play se encarga de generar los APK necesarios para cada dispositivo, teniendo en cuenta su arquitectura, idioma o densidad de pantalla.
 
 ### Asistentes de instalación
@@ -331,7 +329,6 @@ Entre sus principales funcionalidades destacan:
 - Incorporar información sobre la versión del producto.
 - Añadir una pantalla de inicio (splash screen).
 
-![Icono de Launch4j](media/launch4j-icono.jpeg)
 
 ![Captura de la interfaz de Launch4j](media/launch4j-captura.jpg)
 
