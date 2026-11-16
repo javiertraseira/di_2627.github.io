@@ -417,8 +417,8 @@ Para generar una aplicación autocontenida en Windows:
 1. Generar el JAR con dependencias mediante Maven.
 2. Copiarlo a una carpeta denominada *input*.
 3. Verifica que tienes la herramienta *jpackage* accesible, ejecutando `jpackage --version`
-    - Si no es el caso configura correctamente las variables *JAVA_HOME* y *PATH*
-3. Ejecutar el siguiente comando desde una consola de **PowerShell**:
+    - Si no es el caso configura correctamente las variables *JAVA_HOME* y *PATH*.
+3. Ejecuta el siguiente comando desde una consola de **PowerShell**:
 
 ```powershell
 jpackage --type app-image `
