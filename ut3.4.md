@@ -418,7 +418,7 @@ Para generar una aplicación autocontenida en Windows:
 2. Copiarlo a una carpeta denominada *input*.
 3. Verifica que tienes la herramienta *jpackage* accesible, ejecutando `jpackage --version`
     - Si no es el caso configura correctamente las variables *JAVA_HOME* y *PATH*.
-3. Ejecuta el siguiente comando desde una consola de **PowerShell**:
+3. Ejecuta el siguiente comando desde una consola de **PowerShell** adaptándolo a los nombres utilizados en tu aplicación (o al icono si vas a utilizar uno):
 
 ```powershell
 jpackage --type app-image `
@@ -430,7 +430,7 @@ jpackage --type app-image `
   --dest distribucion
 ```
 
-> Se generará una carpeta con el ejecutable de Windows, el JAR y el entorno de ejecución de Java.
+4. Se generará una carpeta con el ejecutable de Windows, el JAR y el entorno de ejecución de Java dentro de `.\distribucion\MiAplicacion`.
 
 El **resultado generado** será el siguiente:
 
